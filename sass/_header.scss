@@ -1,0 +1,28 @@
+@import 'colors';
+header{
+    .container.header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .shop--logo{
+        background-color: $main--orange;
+        display: inline-block;
+        padding: 20px;
+        height: 100%;
+        color: white;
+        font-weight: 700;
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            .texts--li{
+                display: flex;
+            }
+            .icons-li{
+                display: flex;
+            }
+        }
+    }   
+}
