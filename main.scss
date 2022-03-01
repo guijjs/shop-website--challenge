@@ -1,6 +1,8 @@
 @import 'sass/header';
 @import 'sass/font-sizes';
 @import 'sass/colors';
+@import 'sass/mainSection';
+@import 'sass/footer';
 
 *{
     margin: 0;
@@ -19,7 +21,7 @@ html{
         padding: 10px 140px;
     }
 
-    img[alt="bag shopping"]{
+    .svgImg{
         width: 25px;
     }
 
@@ -31,22 +33,23 @@ html{
         align-items: flex-end;
         @for $i from 1 to 5 {
             .bar--#{$i}{
-                width: 100%;
-                height: 7px;
+                width: 70%;
+                height: 5px;
                 background-color: black;
                 border-radius: 2rem;
             }
         }
         :nth-child(odd){
-            width: 60%;
-            height: 6px;
+            height:4px;
+            width: 40%;
+            
         }
         :nth-child(3){
-            height: 5px;
+            height: 4.5px;
             margin-top: 2.5px;
         }
         :nth-child(even){
-            height: 6px;
+            height: 4.5px;
             margin-top:2.5px;
         }
     }

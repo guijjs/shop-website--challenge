@@ -5,16 +5,31 @@ header .container.header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 header .shop--logo {
   background-color: #e67e34;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
-  height: 100%;
+  height: 80px;
   color: white;
   font-weight: 700;
+}
+
+header nav {
+  padding: 1em;
 }
 
 header nav ul {
@@ -22,18 +37,46 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav ul .texts--li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 5em;
 }
 
-header nav ul .icons-li {
+header nav ul .texts--li li {
+  margin-right: 2em;
+}
+
+header nav ul .texts--li li a {
+  color: #060606;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header nav ul .texts--li li a:hover {
+  color: #616E6C;
+}
+
+header nav ul .icons--li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav ul .icons--li div img {
+  margin-right: 6em;
+}
+
+header nav ul .icons--li .bar--menu {
+  margin-left: 1em;
 }
 
 html {
@@ -42,6 +85,216 @@ html {
 
 html body {
   font-size: 1.8rem;
+}
+
+html h1 {
+  font-size: 3.5em;
+}
+
+html .main--texts #first--span {
+  display: inline-block;
+  margin: 0.3em 0 1.5em 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+html .size--list li {
+  font-size: 0.8em;
+}
+
+main section {
+  padding: 10em 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section .categories--clothes ul {
+  list-style: none;
+  text-align: center;
+}
+
+main section .categories--clothes ul li a {
+  color: #616E6C;
+  text-decoration: none;
+}
+
+main section .categories--clothes ul li {
+  margin-bottom: 2em;
+}
+
+main section .categories--clothes ul #category--active {
+  color: #e67e34;
+  font-weight: 700;
+}
+
+main section .main--texts {
+  margin-left: -12.5em;
+}
+
+main section .main--texts div h1 {
+  color: #e67e34;
+}
+
+main section .main--texts div {
+  width: 60%;
+}
+
+main section .main--texts .previous--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 120px;
+  height: 80px;
+  background-color: #CECECE;
+  position: relative;
+}
+
+main section .main--texts .previous--main .arrow--previous-main {
+  position: absolute;
+  left: -12.5%;
+}
+
+main section .main--texts .previous--main .arrow--previous-main img {
+  height: 1.2em;
+}
+
+main section .main--texts .previous--main .span--previous-main {
+  position: absolute;
+  right: -25%;
+}
+
+main section .next--area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section .next--area .next--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80px;
+  height: 60px;
+  background-color: #CECECE;
+  position: relative;
+  right: -60%;
+}
+
+main section .next--area .next--box .next--arrow {
+  position: absolute;
+  right: -12.5%;
+}
+
+main section .next--area .next--box .next--arrow img {
+  height: 1em;
+}
+
+main section .next--area .next--box .next--span {
+  position: absolute;
+  left: -25%;
+}
+
+main section .next--area .size--list ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section .next--area .size--list ul li {
+  border: 2px solid #CECECE;
+  margin: auto;
+  padding: 0.3em 0.55em;
+  border-radius: 70%;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+  cursor: pointer;
+}
+
+main section .next--area .size--list ul li:hover {
+  border: solid 2px #e67e34;
+}
+
+main section .next--area .size--list {
+  margin-top: 1.5em;
+}
+
+main section .next--area .itens--quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em 0 2em 0;
+  border: solid thin #CECECE;
+  background-color: #F1F1F1;
+  width: 180px;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 0.2em;
+}
+
+main section .next--area .itens--quantity div img {
+  width: 0.75em;
+  cursor: pointer;
+}
+
+main section .next--area .add--cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e67e34;
+  max-width: 100%;
+  height: 50px;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+main section .next--area .add--cart .add-cart--span {
+  color: #FFF;
+}
+
+footer {
+  padding: 0 7em;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  list-style: none;
+}
+
+footer ul li {
+  margin: auto;
 }
 
 * {
@@ -65,7 +318,7 @@ html .container {
   padding: 10px 140px;
 }
 
-html img[alt="bag shopping"] {
+html .svgImg {
   width: 25px;
 }
 
@@ -85,45 +338,45 @@ html .bar--menu {
 }
 
 html .bar--menu .bar--1 {
-  width: 100%;
-  height: 7px;
+  width: 70%;
+  height: 5px;
   background-color: black;
   border-radius: 2rem;
 }
 
 html .bar--menu .bar--2 {
-  width: 100%;
-  height: 7px;
+  width: 70%;
+  height: 5px;
   background-color: black;
   border-radius: 2rem;
 }
 
 html .bar--menu .bar--3 {
-  width: 100%;
-  height: 7px;
+  width: 70%;
+  height: 5px;
   background-color: black;
   border-radius: 2rem;
 }
 
 html .bar--menu .bar--4 {
-  width: 100%;
-  height: 7px;
+  width: 70%;
+  height: 5px;
   background-color: black;
   border-radius: 2rem;
 }
 
 html .bar--menu :nth-child(odd) {
-  width: 60%;
-  height: 6px;
+  height: 4px;
+  width: 40%;
 }
 
 html .bar--menu :nth-child(3) {
-  height: 5px;
+  height: 4.5px;
   margin-top: 2.5px;
 }
 
 html .bar--menu :nth-child(even) {
-  height: 6px;
+  height: 4.5px;
   margin-top: 2.5px;
 }
 /*# sourceMappingURL=main.css.map */

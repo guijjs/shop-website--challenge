@@ -1,0 +1,133 @@
+@import 'colors';
+main section{
+    padding: 10em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .categories--clothes{
+        ul{
+            list-style: none;
+            text-align: center;
+            li a{
+                color: $smooth--black;
+                text-decoration: none;
+            }
+            li{
+                margin-bottom: 2em;
+            }
+            #category--active{
+                color: $main--orange;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .main--texts{
+        margin-left: -12.5em;
+        div h1{
+            color: $main--orange;
+        }
+        div{
+            width: 60%;
+        }
+
+        .previous--main{
+            display: flex;
+            align-items: center;
+            max-width: 120px;
+            height: 80px;
+            background-color: $light--gray;
+            position: relative;
+
+            .arrow--previous-main{
+                position: absolute;
+                left: -12.5%;
+                img{
+                    height: 1.2em;
+                }
+            }
+            .span--previous-main{
+                position: absolute;
+                right: -25%;
+            }
+        }
+    }
+
+    .next--area{
+        display: flex;
+        flex-direction: column;
+        .next--box{
+            display: flex;
+            align-items: center;
+            max-width: 80px;
+            height: 60px;
+            background-color: $light--gray;
+            position: relative;
+            right: -60%;
+    
+            .next--arrow{
+                position: absolute;
+                right: -12.5%;
+                img{
+                    height: 1em;
+                }
+            }
+            .next--span{
+                position: absolute;
+                left: -25%;
+            }
+        }
+        .size--list ul{
+            list-style: none;
+            display: flex;
+            li{
+                border: 2px solid $light--gray;
+                margin: auto;
+                padding: 0.3em 0.55em;
+                border-radius: 70%;
+                transition: border 0.5s;
+                cursor: pointer;
+                &:hover{
+                    border:solid 2px $main--orange;
+                }
+            }
+        }
+        .size--list{
+            margin-top: 1.5em;
+        }
+
+        .itens--quantity{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2em 0 2em 0;
+            border: solid thin $light--gray;
+            background-color: $white;
+            width: 180px;
+            height: 100%;
+            padding: 10px 20px;
+            border-radius: 0.2em;
+
+            div img{
+                width: 0.75em;
+                cursor: pointer;
+            }
+        }
+
+        .add--cart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $main--orange;
+            max-width: 100%;
+            height: 50px;
+            border-radius: 0.2em;
+            cursor: pointer;
+            .add-cart--span{
+                color: #FFF;
+            }
+        }
+    }
+
+
+}
