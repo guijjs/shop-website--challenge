@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mediaQueries';
 main section{
     padding: 10em 5em;
     display: flex;
@@ -23,7 +24,15 @@ main section{
     }
 
     .main--texts{
-        margin-left: -12.5em;
+        margin-left: 1em;
+        ///Adjust position in differents screens
+        @include small--laptop{
+            margin-left: -1em;
+        }
+        @include tablet{
+            margin-left: 3em;
+            margin-bottom:10em ;
+        }
         div h1{
             color: $main--orange;
         }
@@ -34,8 +43,8 @@ main section{
         .previous--main{
             display: flex;
             align-items: center;
-            max-width: 120px;
-            height: 80px;
+            max-width: 5em;
+            height: 4em;
             background-color: $light--gray;
             position: relative;
 
@@ -44,6 +53,10 @@ main section{
                 left: -12.5%;
                 img{
                     height: 1.2em;
+                    transition: height 0.25s linear;
+                    &:hover{
+                        height: 1.8em;
+                    }
                 }
             }
             .span--previous-main{
@@ -130,4 +143,60 @@ main section{
     }
 
 
+}
+
+// Reponsiveness adjusts for Large Cellphone
+@include cellphone{
+    main section{
+        flex-direction: column;
+        .main--texts{
+            div{
+                width: 100%;
+                text-align: center;
+            }
+            .text--main-span{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .categories--clothes{
+            ul {
+                li a{
+                    text-shadow: 2px 2px 2px $main--orange;
+                    color: $white;
+                }
+                #category--active{
+                    text-shadow: 1px 1px #B87A15;
+                }
+            }
+        }
+    }
+}
+
+// Reponsiveness adjusts for Small Cellphone
+@include small--cellphone{
+    main section{
+        flex-direction: column;
+        .main--texts{
+            div{
+                width: 100%;
+                text-align: center;
+            }
+            .text--main-span{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .categories--clothes{
+            ul {
+                li a{
+                    text-shadow: 2px 2px 2px $main--orange;
+                    color: $white;
+                }
+                #category--active{
+                    text-shadow: 1px 1px #B87A15;
+                }
+            }
+        }
+    }
 }

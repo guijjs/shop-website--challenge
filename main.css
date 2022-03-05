@@ -11,6 +11,18 @@ header .container.header {
   width: 100%;
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+  header .container.header {
+    padding: 1em 2em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  header .container.header {
+    padding: 1em 2em;
+  }
+}
+
 header .shop--logo {
   background-color: #e67e34;
   display: -webkit-inline-box;
@@ -79,8 +91,56 @@ header nav ul .icons--li .bar--menu {
   margin-left: 1em;
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  header .header--menu--list .texts--li {
+    display: none;
+  }
+  header .header--menu--list img[alt="bag shopping"] {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .header--menu--list .texts--li {
+    display: none;
+  }
+  header .header--menu--list img[alt="bag shopping"] {
+    display: none;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  header .header--menu--list .texts--li {
+    display: none;
+  }
+  header .header--menu--list img[alt="bag shopping"] {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  header .header--menu--list .texts--li {
+    display: none;
+  }
+  header .header--menu--list img[alt="bag shopping"] {
+    display: none;
+  }
+}
+
 html {
   font-size: 62.5%;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 52.5%;
+  }
 }
 
 html body {
@@ -88,7 +148,25 @@ html body {
 }
 
 html h1 {
-  font-size: 3.5em;
+  font-size: 3.2em;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  html h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  html h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  html h1 {
+    font-size: 2.5em;
+  }
 }
 
 html .main--texts #first--span {
@@ -100,6 +178,15 @@ html .main--texts #first--span {
 
 html .size--list li {
   font-size: 0.8em;
+}
+
+html .span--previous-main {
+  -webkit-transition: font-size 0.25s linear;
+  transition: font-size 0.25s linear;
+}
+
+html .span--previous-main:hover {
+  font-size: 1.2em;
 }
 
 main section {
@@ -135,7 +222,20 @@ main section .categories--clothes ul #category--active {
 }
 
 main section .main--texts {
-  margin-left: -12.5em;
+  margin-left: 1em;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  main section .main--texts {
+    margin-left: -1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section .main--texts {
+    margin-left: 3em;
+    margin-bottom: 10em;
+  }
 }
 
 main section .main--texts div h1 {
@@ -153,8 +253,8 @@ main section .main--texts .previous--main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 120px;
-  height: 80px;
+  max-width: 5em;
+  height: 4em;
   background-color: #CECECE;
   position: relative;
 }
@@ -166,6 +266,12 @@ main section .main--texts .previous--main .arrow--previous-main {
 
 main section .main--texts .previous--main .arrow--previous-main img {
   height: 1.2em;
+  -webkit-transition: height 0.25s linear;
+  transition: height 0.25s linear;
+}
+
+main section .main--texts .previous--main .arrow--previous-main img:hover {
+  height: 1.8em;
 }
 
 main section .main--texts .previous--main .span--previous-main {
@@ -281,6 +387,54 @@ main section .next--area .add--cart .add-cart--span {
   color: #FFF;
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section .main--texts div {
+    width: 100%;
+    text-align: center;
+  }
+  main section .main--texts .text--main-span {
+    width: 100%;
+    text-align: center;
+  }
+  main section .categories--clothes ul li a {
+    text-shadow: 2px 2px 2px #e67e34;
+    color: #F1F1F1;
+  }
+  main section .categories--clothes ul #category--active {
+    text-shadow: 1px 1px #B87A15;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section .main--texts div {
+    width: 100%;
+    text-align: center;
+  }
+  main section .main--texts .text--main-span {
+    width: 100%;
+    text-align: center;
+  }
+  main section .categories--clothes ul li a {
+    text-shadow: 2px 2px 2px #e67e34;
+    color: #F1F1F1;
+  }
+  main section .categories--clothes ul #category--active {
+    text-shadow: 1px 1px #B87A15;
+  }
+}
+
 footer {
   padding: 0 7em;
 }
@@ -293,8 +447,26 @@ footer ul {
   list-style: none;
 }
 
+@media (min-width: 320px) and (max-width: 424px) {
+  footer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  footer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
 footer ul li {
-  margin: auto;
+  margin: 0 1.5em;
 }
 
 * {
@@ -311,6 +483,18 @@ html {
   background-image: url("assets/background.jpg");
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  html {
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  html {
+    background-repeat: no-repeat;
+  }
 }
 
 html .container {

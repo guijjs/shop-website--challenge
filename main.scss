@@ -3,6 +3,7 @@
 @import 'sass/colors';
 @import 'sass/mainSection';
 @import 'sass/footer';
+@import 'sass/mediaQueries';
 
 *{
     margin: 0;
@@ -16,6 +17,14 @@ html{
     background-image: url('assets/background.jpg');
     background-position: center;
     background-size: cover;
+    // Reponsiveness adjusts for Large Cellphone
+    @include cellphone{
+        background-repeat: no-repeat;
+    }
+    // Reponsiveness adjusts for Small Cellphone
+    @include small--cellphone{
+        background-repeat: no-repeat;
+    }
     .container{
         width: 1440px;
         padding: 10px 140px;

@@ -1,11 +1,22 @@
+@import 'mediaQueries';
 footer{
     padding: 0 7em;
 }
 footer ul{
     display: flex;
     width: 200px;
+    //Centrallize the footer
+    @include small--cellphone{
+        justify-content: center;
+        width: 100%;
+    }
+    @include cellphone{
+        justify-content: center;
+        width: 100%;
+    }
+
     list-style: none;
     li{
-        margin: auto;
+        margin: 0 1.5em;
     }
 }

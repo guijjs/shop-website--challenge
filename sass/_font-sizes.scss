@@ -1,10 +1,28 @@
+@import 'mediaQueries';
 html{
+    //A responsive form to font-size
     font-size: 62.5%;
+    @include small--laptop{
+        font-size: 52.5%;
+    }
+    @include tablet{
+        font-size: 52.5%;
+    }
     body{
         font-size: 1.8rem;
     }
     h1{
-        font-size: 3.5em;
+        font-size: 3.2em;
+        //Different Title Font-size
+        @include small--laptop{
+            font-size: 2.5em;
+        }
+        @include tablet{
+            font-size: 1.8em;
+        }
+        @include small--cellphone{
+            font-size: 2.5em;
+        }
     }
     .main--texts{
         #first--span{
@@ -20,4 +38,10 @@ html{
         }
     }
 
+    .span--previous-main{
+        transition: font-size 0.25s linear;
+        &:hover{
+            font-size: 1.2em;
+        }
+    }
 }

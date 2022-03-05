@@ -1,10 +1,17 @@
 @import 'colors';
+@import 'mediaQueries';
 header{
     .container.header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        @include cellphone{
+            padding: 1em 2em;
+        }
+        @include small--cellphone{
+            padding: 1em 2em;
+        }
     }
     .shop--logo{
         background-color: $main--orange;
@@ -48,5 +55,47 @@ header{
                 }
             }
         }
-    }   
+    }
+    @include small--laptop{
+        .header--menu--list{
+            .texts--li{
+                display: none;
+            }
+            img[alt="bag shopping"]{
+                display: none;
+            }
+        }
+    }
+
+    @include tablet{
+        .header--menu--list{
+            .texts--li{
+                display: none;
+            }
+            img[alt="bag shopping"]{
+                display: none;
+            }
+        }
+    }
+
+    @include cellphone{
+        .header--menu--list{
+            .texts--li{
+                display: none;
+            }
+            img[alt="bag shopping"]{
+                display: none;
+            }
+        }
+    }
+    @include small--cellphone{
+        .header--menu--list{
+            .texts--li{
+                display: none;
+            }
+            img[alt="bag shopping"]{
+                display: none;
+            }
+        }
+    }
 }
